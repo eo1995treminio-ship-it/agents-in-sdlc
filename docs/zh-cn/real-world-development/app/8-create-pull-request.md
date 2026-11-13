@@ -3,7 +3,7 @@ title: "第 8 课 - 创建并合并功能 PR"
 description: "一并审查筛选功能、指令、技能更新、QA 配置文件和测试，然后创建 PR 并使用 Agent Merge。"
 authors:
   - geektrainer
-lastUpdated: 2026-09-17
+lastUpdated: 2026-10-22
 ---
 
 筛选实现、指令更新、技能更新、质量保证 (QA) 配置文件和测试已保存在同一分支上。现在一并审查这些内容，并创建拉取请求。你已自行合并星级评分拉取请求 (PR)；这次将让 **Agent Merge** 管理该流程。
@@ -33,8 +33,8 @@ lastUpdated: 2026-09-17
 
 1. 使用智能体选择器选择 **Default agent**。
 2. 选择 **Create PR** 旁的下拉菜单。
-3. 选择 **Agent merge**。按钮将更改为 **Agent merge**。
-4. 选择 **Agent merge**，启动 agent merge 流程。
+3. 选择 **Agent Merge**。按钮将更改为 **Agent Merge**。
+4. 选择 **Agent Merge** 按钮以启动流程。仅选择下拉菜单中的选项并不会启动该流程。
 
 Agent merge 流程随即启动。它将：
 
@@ -47,8 +47,16 @@ Agent merge 流程随即启动。它将：
 
 让 Agent merge 在所有检查通过后合并 PR。
 
-5. 选择 **Agent merge** 旁的下拉菜单。
-6. 确保 **Merge pull request** 旁有勾选标记。
+5. 授予合并权限前，先审查 PR 差异和验证证据。
+6. 选择 **Agent Merge** 旁的下拉菜单。
+7. 确认 **Merge pull request** 旁边有勾选标记。
+8. 明确要求智能体合并：
+
+    ```plaintext
+    Merge the PR once all required checks and approvals pass. Do not bypass repository protections.
+    ```
+
+9. 跟踪智能体的进度并解决它报告的任何阻塞问题。继续前确认 PR 状态为 **Merged**；启用了合并权限或智能体正在运行，都不能证明合并已完成。
 
 > [!IMPORTANT]
 > Agent Merge 不会绕过存储库保护或缺失的权限。解决这些阻塞项后再继续。

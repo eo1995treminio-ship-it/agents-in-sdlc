@@ -3,7 +3,7 @@ title: "第 2 课 - 添加星级评分：快速上手"
 description: "在 GitHub Copilot app 中启动第一个智能体会话，对游戏卡片进行一项小改动，并通过第一个拉取请求合并更改。"
 authors:
   - geektrainer
-lastUpdated: 2026-07-09
+lastUpdated: 2026-10-22
 ---
 
 在上一课中，你浏览了工作区并使用了快速聊天。现在可以启动**智能体会话**，对项目进行第一次更改。此次改动很小：游戏数据中已有星级评分，但主页上的游戏卡片尚未显示。你将要求智能体显示评分、审查更改，并通过第一个拉取请求合并更改。
@@ -97,10 +97,11 @@ Copilot app 首先创建新的工作树，即项目的隔离副本。随后，�
 
 1. 选择右上角的 **Create PR**。
 2. 如果系统提示，请选择 **Sign in with your browser**，并按照提示完成身份验证。
-3. Copilot 开始创建 PR。
-4. 选择聊天上方的 **PR** 气泡，在审查窗格中打开并查看拉取请求。可根据需要在此审查 PR。
-5. 准备好后，选择 **Ready to merge**。
-6. 在新对话框窗口中选择 **Merge pull request**，合并拉取请求。
+3. 如果 Copilot 说明存储库策略要求创建 PR 前必须关联相应议题，请确认它应遵循此流程。
+4. Copilot 开始创建 PR。
+5. 选择聊天上方的 **PR** 气泡，在审查窗格中打开并查看拉取请求。可根据需要在此审查 PR。
+6. 准备好后，选择 **Ready to merge**。
+7. 在新对话框窗口中选择 **Merge pull request**，合并拉取请求。
 
 ## 总结与后续步骤
 
@@ -120,7 +121,7 @@ Copilot app 首先创建新的工作树，即项目的隔离副本。随后，�
 - [关于 GitHub Copilot app][about-copilot-app]
 - [使用 GitHub Copilot app 管理议题和拉取请求][managing-issues-prs]
 
-[prior-lesson]: ../1-install-copilot-app/#安装并配置-github-copilot-app
+[prior-lesson]: ../1-install-copilot-app/#安装并配置应用
 [next-lesson]: ../3-agent-modes/
 [agent-sessions]: https://docs.github.com/copilot/how-tos/github-copilot-app/agent-sessions
 [about-copilot-app]: https://docs.github.com/copilot/concepts/agents/github-copilot-app
